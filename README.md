@@ -7,6 +7,9 @@ This repo can be published as an artifact-only package with:
 
 Source inspiration: [microGPT by Andrej Karpathy](https://karpathy.github.io/2026/02/12/microgpt/).
 
+This `micro-gpt` variant was produced entirely with neuroevolution (NEAT-style search over topology and weights), not with standard gradient-based backpropagation.
+The main experiment goal was to test whether a compact GPT-like model can be discovered this way end-to-end.
+
 ## Reproducible Result
 
 ```
