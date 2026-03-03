@@ -10,6 +10,16 @@ Source inspiration: [microGPT by Andrej Karpathy](https://karpathy.github.io/202
 This `micro-gpt` variant was produced entirely with neuroevolution (NEAT-style search over topology and weights), not with standard gradient-based backpropagation.
 The main experiment goal was to test whether a compact GPT-like model can be discovered this way end-to-end.
 
+## Compactness Note (vs microGPT reference)
+
+Karpathy's article notes a microGPT baseline at `4,192` parameters and explains that large GPT-4 class systems scale the same core Transformer pattern to far larger width/depth with extra blocks.
+
+This evolved vector-neuron model is smaller in this experiment:
+- enabled topology: `45` neurons, `98` connections
+- enabled parameter estimate: `253` (connection matrix elements + bias vectors + attn-block meta vectors)
+
+So the obtained result is not only functional for this setup, but also significantly more compact than the cited microGPT reference.
+
 ## Reproducible Result
 
 ```
