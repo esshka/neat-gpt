@@ -5,6 +5,17 @@ This repo can be published as an artifact-only package with:
 - Mermaid topology
 - ONNX inference script
 
+Source inspiration: [microGPT by Andrej Karpathy](https://karpathy.github.io/2026/02/12/microgpt/).
+
+## Reproducible Result
+
+```
+neurons=45
+connections=98
+attn_nodes=5
+attn_edges=36
+```
+
 ## Files To Publish
 
 - `checkpoints_vector/gen_0120.onnx`
